@@ -42,4 +42,11 @@
   grid-column: span 4 !important;
 } */
 
+@media print {
+  .noPrint {
+    visibility: hidden;
+    display: none;
+  }
+}
+
 

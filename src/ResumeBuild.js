@@ -3,7 +3,7 @@ import data from "./Resume";
 import QR from "./Images/Portfolio.jpg";
 import { FaChevronDown, FaAngleRight, FaAngleDown, FaQuoteLeft } from "react-icons/fa";
 
-let GradPadding = ["1rem", "10.4rem"];
+let GradPadding = ["1rem", "11.6rem"];
 
 export default function ResumeBuild() {
   return (
@@ -42,7 +42,7 @@ export default function ResumeBuild() {
       <div className="col-span-1 row-span-2">
         {data.Collage.map((item, index) => {
           return (
-            <div className="pl-6" style={{ paddingTop: GradPadding[index] }} key={index}>
+            <div className="pl-10" style={{ paddingTop: GradPadding[index] }} key={index}>
               {item.GradYear}
             </div>
           );
@@ -107,7 +107,7 @@ export default function ResumeBuild() {
       <div className="col-span-1 row-span-2">
         {data.Work.map((item, index) => {
           return (
-            <div className="pl-5" style={{ paddingTop: GradPadding[index] }} key={index}>
+            <div className="pl-8" style={{ paddingTop: GradPadding[index] }} key={index}>
               {item.Time}
             </div>
           );
