@@ -58,26 +58,26 @@ export default function CoverPageBuild() {
           })}
         </div>
         {/* Company */}
-        <div className="b-box col-span-3 row-span-3 p-4 flex flex-col">
+        <div className=" col-span-3 row-span-3 p-4 flex flex-col">
           <div className="flex flex-row justify-start font-bold">
             <FaAngleDown className="mt-1 opacity-30" />
-            <input type={"text"} id="name" placeholder="Talent Acquisition" className="w-full text-base" onChange={Name} />
+            <input type={"text"} id="name" placeholder="Talent Acquisition" className="w-full text-base-mobile" onChange={Name} />
           </div>
           <div className="flex flex-row justify-start pl-4 pt-2">
             &#183;
-            <input type={"text"} className="px-2 w-full text-base" defaultValue="Hiring Manager" />
+            <input type={"text"} className="px-2 w-full text-base-mobile" defaultValue="Hiring Manager" />
           </div>
           <div className="flex flex-row justify-start pl-4 pt-2">
             &#183;
-            <input type={"text"} id="company" className="px-2 w-full text-base" placeholder="Company" onChange={Company} />
+            <input type={"text"} id="company" className="px-2 w-full text-base-mobile" placeholder="Company" onChange={Company} />
           </div>
           <div className="flex flex-row justify-start pl-4 pt-2">
             &#183;
-            <input type={"text"} className="px-2 w-full text-base" placeholder="Address" />
+            <input type={"text"} className="px-2 w-full text-base-mobile" placeholder="Address" />
           </div>
           <div className="flex flex-row justify-start pl-4 pt-2">
             &#183;
-            <input type={"text"} className="px-2 w-full text-base" placeholder="City State Zip" />
+            <input type={"text"} className="px-2 w-full text-base-mobile" placeholder="City State Zip" />
           </div>
         </div>
         {/*  */}
