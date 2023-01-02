@@ -6,8 +6,8 @@ import { FaChevronDown, FaAngleRight, FaAngleDown } from "react-icons/fa";
 
 export default function CoverPageBuild() {
   const [name, setName] = useState("Talent Acquisition");
-  const [company, setCompany] = useState("");
-  const [job, setJob] = useState("");
+  const [company, setCompany] = useState("Your Company");
+  const [job, setJob] = useState("Software Developer");
 
   function Name() {
     setName(document.getElementById("name").value);
