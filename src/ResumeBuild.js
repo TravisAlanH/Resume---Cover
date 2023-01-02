@@ -125,7 +125,7 @@ export default function ResumeBuild() {
                 <FaAngleDown className="mt-1 opacity-30" />
                 {item.Place}
               </div>
-              <div className="pl-8 ">
+              <div className="pl-8">
                 {item.Data.map((data, index) => {
                   return (
                     <p className="pl-10 -indent-4 pt-1" key={index}>

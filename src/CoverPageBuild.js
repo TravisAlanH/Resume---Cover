@@ -27,7 +27,7 @@ export default function CoverPageBuild() {
 
   return (
     <div>
-      <div className="CoverGrid pt-12">
+      <div className="CoverGrid pt-8">
         {/*  */}
         <div className="col-span-3 bg-cyan-900 rounded-br-3xl text-white text-sm pl-12 pt-6">Cover Letter</div>
         <div className="col-span-1"></div>
@@ -88,7 +88,7 @@ export default function CoverPageBuild() {
           </div>
         </div>
         {/* Message */}
-        <div className="col-span-3 row-span-2 p-4 text-base">
+        <div className="col-span-3 row-span-2 p-4 textMobile">
           Dear {name} or whom it May Concern, <br />
           <div className="indent-8">
             This is regarding {company} open position for {job}. I am a highly focused, motivated and a skilled {job} with an ability to problem solve quickly and efficiently. I hold two Bachelors Degrees. A Computer Science Degree where I focused on Data Structures, and optimization from Dakota
