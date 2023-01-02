@@ -14,11 +14,11 @@ export default function ResumeBuild() {
       {/*  */}
       <div className="col-span-3">
         <h1 className="text-4xl px-12 pt-6 uppercase font-extrabold text-cyan-800">{data.Name}</h1>
-        <div className="text-2lx px-12">{data.HomeQuote}</div>
+        <div className="text-2lx px-12 text-base">{data.HomeQuote}</div>
       </div>
       <div className="col-span-1 p-2 flex flex-row items-center justify-start">
         <FaQuoteLeft className="text-8xl pb-16 mb-2 mr-2 text-cyan-800" />
-        <div>{data.AboutTextAlt}</div>
+        <div className="text-base">{data.AboutTextAlt}</div>
       </div>
       {/*   */}
       <div className="b-box col-span-1 px-8 pt-2 uppercase flex justify-start items-center text-xl font-extrabold text-cyan-800">
@@ -34,7 +34,7 @@ export default function ResumeBuild() {
               <div className="text-lg font-bold flex flex-row">
                 <FaAngleRight className="mt-1 opacity-30" /> {item.Type}
               </div>
-              <div className="pl-8 opacity-80">{item.Data}</div>
+              <div className="pl-8 opacity-80 text-base">{item.Data}</div>
             </div>
           );
         })}
@@ -42,7 +42,7 @@ export default function ResumeBuild() {
       <div className="col-span-1 row-span-2">
         {data.Collage.map((item, index) => {
           return (
-            <div className="pl-10" style={{ paddingTop: GradPadding[index] }} key={index}>
+            <div className="pl-10 text-base" style={{ paddingTop: GradPadding[index] }} key={index}>
               {item.GradYear}
             </div>
           );
@@ -56,7 +56,7 @@ export default function ResumeBuild() {
                 <FaAngleRight className="mt-1 opacity-30" />
                 {item.Degree}
               </div>
-              <div className="pl-8 flex flex-row">
+              <div className="pl-8 flex flex-row text-base">
                 <FaAngleDown className="mt-1 opacity-30" />
                 {item.School}
               </div>
@@ -116,7 +116,7 @@ export default function ResumeBuild() {
       <div className="col-span-2 row-span-2">
         {data.Work.map((item, index) => {
           return (
-            <div className="flex flex-col pt-4 px-4 " key={index}>
+            <div className="flex flex-col pt-4 px-4" key={index}>
               <div className=" text-lg font-bold flex flex-row">
                 <FaAngleRight className="mt-1 opacity-30" />
                 {item.Title}
@@ -125,7 +125,7 @@ export default function ResumeBuild() {
                 <FaAngleDown className="mt-1 opacity-30" />
                 {item.Place}
               </div>
-              <div className="pl-8">
+              <div className="pl-8 ">
                 {item.Data.map((data, index) => {
                   return (
                     <p className="pl-10 -indent-4 pt-1" key={index}>

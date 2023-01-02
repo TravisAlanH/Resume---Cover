@@ -5,7 +5,7 @@ import Sign from "./Images/Sign.jpg";
 import { FaChevronDown, FaAngleRight, FaAngleDown } from "react-icons/fa";
 
 export default function CoverPageBuild() {
-  const [name, setName] = useState("");
+  const [name, setName] = useState("Talent Acquisition");
   const [company, setCompany] = useState("");
   const [job, setJob] = useState("");
 
@@ -52,7 +52,7 @@ export default function CoverPageBuild() {
                 <div className="text-lg font-bold flex flex-row">
                   <FaAngleRight className="mt-1 opacity-30" /> {item.Type}
                 </div>
-                <div className="pl-8 opacity-80">{item.Data}</div>
+                <div className="pl-8 opacity-80 text-base">{item.Data}</div>
               </div>
             );
           })}
@@ -61,23 +61,23 @@ export default function CoverPageBuild() {
         <div className="b-box col-span-3 row-span-3 p-4 flex flex-col">
           <div className="flex flex-row justify-start font-bold">
             <FaAngleDown className="mt-1 opacity-30" />
-            <input type={"text"} id="name" placeholder="Talent Acquisition" className="w-full" onChange={Name} />
+            <input type={"text"} id="name" placeholder="Talent Acquisition" className="w-full text-base" onChange={Name} />
           </div>
           <div className="flex flex-row justify-start pl-4 pt-2">
             &#183;
-            <input type={"text"} className="px-2 w-full" defaultValue="Hiring Manager" />
+            <input type={"text"} className="px-2 w-full text-base" defaultValue="Hiring Manager" />
           </div>
           <div className="flex flex-row justify-start pl-4 pt-2">
             &#183;
-            <input type={"text"} id="company" className="px-2 w-full" placeholder="Company" onChange={Company} />
+            <input type={"text"} id="company" className="px-2 w-full text-base" placeholder="Company" onChange={Company} />
           </div>
           <div className="flex flex-row justify-start pl-4 pt-2">
             &#183;
-            <input type={"text"} className="px-2 w-full" placeholder="Address" />
+            <input type={"text"} className="px-2 w-full text-base" placeholder="Address" />
           </div>
           <div className="flex flex-row justify-start pl-4 pt-2">
             &#183;
-            <input type={"text"} className="px-2 w-full" placeholder="City State Zip" />
+            <input type={"text"} className="px-2 w-full text-base" placeholder="City State Zip" />
           </div>
         </div>
         {/*  */}
@@ -88,22 +88,24 @@ export default function CoverPageBuild() {
           </div>
         </div>
         {/* Message */}
-        <div className="col-span-3 row-span-2 p-4">
+        <div className="col-span-3 row-span-2 p-4 text-base">
           Dear {name} or whom it May Concern, <br />
           <div className="indent-8">
             This is regarding {company} open position for {job}. I am a highly focused, motivated and a skilled {job} with an ability to problem solve quickly and efficiently. I hold two Bachelors Degrees. A Computer Science Degree where I focused on Data Structures, and optimization from Dakota
-            Status University. As well as Business Degree tailored to Financial and Team Management from the University of Charleston.
+            State University. As well as Business Degree tailored to Financial and Team Management from the University of Charleston.
           </div>
           <br />
-          <div className="indent-8">
-            I understand the importance of building and managing Data Structures, and feel that with my knowledge and motivation I can quickly become a valued member of the {company} team. <br /> <br />
-          </div>
-          <div className="indent-64">Thank you for your time and consideration</div>
-          <div className="flex flex-row justify-end pr-24 pt-4">
+          <div className="indent-8">I understand the importance of building and managing Data Structures, and feel that with my knowledge and motivation I can quickly become a valued member of the {company} team. </div>
+          <br />
+          Thank you for your time and consideration
+          <div>
             <img src={Sign} className="w-64" alt="Signature" />
+            Travis Heidelberger
           </div>
-          <div className="indent-64">Travis Heidelberger</div>
         </div>
+
+        {/* </div> */}
+
         {/*  */}
         {/* <div className="col-span-1 row-span-2"></div> */}
         <div className="col-span-3 bg-cyan-900 rounded-tl-3xl px-4 pb-3 flex justify-end items-end text-xs text-white"> ./ Cover Letter Created with React using Tailwind by Travis Heidelberger</div>
