@@ -32,19 +32,19 @@ function App() {
 
   return (
     <div className="App">
-      <button className="ml-96 noPrint mt-8 border bg-cyan-800 text-white px-8 py-1 rounded-lg uppercase" id="printButton" onClick={PrintBoth}>
+      <button className="ml-96 noPrint mt-8 border bg-cyan-800 text-white px-8 py-1 rounded-lg uppercase text-base" id="printButton" onClick={PrintBoth}>
         Print Both
       </button>
       <div id="coverPage">
         <CoverPageBuild />
       </div>
-      <button className="ml-96 noPrint mb-12 border bg-cyan-800 text-white px-8 py-1 rounded-lg uppercase" id="printButton" onClick={PrintCover}>
+      <button className="ml-96 noPrint mb-12 border bg-cyan-800 text-white px-8 py-1 rounded-lg uppercase text-base" id="printButton" onClick={PrintCover}>
         Print Cover
       </button>
       <div id="resumePage">
         <ResumeBuild />
       </div>
-      <button className="ml-96 mb-8 noPrint border bg-cyan-800 text-white px-8 py-1 rounded-lg uppercase" id="printButton" onClick={PrintResume}>
+      <button className="ml-96 mb-8 noPrint border bg-cyan-800 text-white px-8 py-1 rounded-lg uppercase text-base" id="printButton" onClick={PrintResume}>
         Print Resume
       </button>
     </div>

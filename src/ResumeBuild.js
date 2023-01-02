@@ -63,7 +63,7 @@ export default function ResumeBuild() {
               <div className="pl-8">
                 {item.Data.map((data, index) => {
                   return (
-                    <p className="pl-8 pt-1" key={index}>
+                    <p className="pl-8 pt-1 text-base" key={index}>
                       &#183; {data}
                     </p>
                   );
@@ -128,7 +128,7 @@ export default function ResumeBuild() {
               <div className="pl-8">
                 {item.Data.map((data, index) => {
                   return (
-                    <p className="pl-10 -indent-4 pt-1" key={index}>
+                    <p className="pl-10 -indent-4 pt-1 text-base" key={index}>
                       &#183; {data}
                     </p>
                   );
