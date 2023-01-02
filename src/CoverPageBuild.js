@@ -35,7 +35,7 @@ export default function CoverPageBuild() {
         <div className="col-span-3">
           <h1 className="text-4xl px-12 pt-6 uppercase font-extrabold text-cyan-800">{data.Name}</h1>
           <div className="text-2lx px-12">
-            <input type={"text"} id="job" placeholder="Job" onChange={Job} />
+            <input type={"text"} id="job" placeholder="Job" className="w-full" onChange={Job} />
           </div>
         </div>
         <div className="col-span-1"></div>
@@ -61,23 +61,23 @@ export default function CoverPageBuild() {
         <div className="b-box col-span-3 row-span-3 p-4 flex flex-col">
           <div className="flex flex-row justify-start font-bold">
             <FaAngleDown className="mt-1 opacity-30" />
-            <input type={"text"} id="name" placeholder="Name" onChange={Name} />
+            <input type={"text"} id="name" placeholder="Talent Acquisition" className="w-full" onChange={Name} />
           </div>
           <div className="flex flex-row justify-start pl-4 pt-2">
             &#183;
-            <input type={"text"} className="px-2" defaultValue="Hiring Manager" />
+            <input type={"text"} className="px-2 w-full" defaultValue="Hiring Manager" />
           </div>
           <div className="flex flex-row justify-start pl-4 pt-2">
             &#183;
-            <input type={"text"} id="company" className="px-2" placeholder="Company" onChange={Company} />
+            <input type={"text"} id="company" className="px-2 w-full" placeholder="Company" onChange={Company} />
           </div>
           <div className="flex flex-row justify-start pl-4 pt-2">
             &#183;
-            <input type={"text"} className="px-2" placeholder="Address" />
+            <input type={"text"} className="px-2 w-full" placeholder="Address" />
           </div>
           <div className="flex flex-row justify-start pl-4 pt-2">
             &#183;
-            <input type={"text"} className="px-2" placeholder="City State Zip" />
+            <input type={"text"} className="px-2 w-full" placeholder="City State Zip" />
           </div>
         </div>
         {/*  */}
@@ -89,14 +89,14 @@ export default function CoverPageBuild() {
         </div>
         {/* Message */}
         <div className="col-span-3 row-span-2 p-4">
-          Dear {name}, <br />
+          Dear {name} or whom it May Concern, <br />
           <div className="indent-8">
-            This is regarding {company}'s open position for {job}. I am a highly focused, motivated and skilled {job} with an ability to problem solve quickly and efficiently. I hold two bachelors degrees. A Computer Science Degree where I focused on Data Structures, and optimization from Dakota
-            Status University. As well as Business Degree tailored to financial and team management from the University of Charleston.
+            This is regarding {company} open position for {job}. I am a highly focused, motivated and a skilled {job} with an ability to problem solve quickly and efficiently. I hold two Bachelors Degrees. A Computer Science Degree where I focused on Data Structures, and optimization from Dakota
+            Status University. As well as Business Degree tailored to Financial and Team Management from the University of Charleston.
           </div>
           <br />
           <div className="indent-8">
-            I understand the importance building and managing Data Structures, and feel that with my knowledge and motivation I can quickly become a valued member of the {company} team. <br /> <br />
+            I understand the importance of building and managing Data Structures, and feel that with my knowledge and motivation I can quickly become a valued member of the {company} team. <br /> <br />
           </div>
           <div className="indent-64">Thank you for your time and consideration</div>
           <div className="flex flex-row justify-end pr-24 pt-4">

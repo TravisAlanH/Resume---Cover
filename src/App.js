@@ -21,20 +21,31 @@ function App() {
     document.title = currentTitle;
   }
 
+  function PrintBoth() {
+    let currentTitle = document.title;
+    document.getElementById("resumePage").classList.remove("noPrint");
+    document.getElementById("coverPage").classList.remove("noPrint");
+    document.title = currentTitle + "_Travis Heidelberger_Resume_CoverLetter";
+    window.print();
+    document.title = currentTitle;
+  }
+
   return (
     <div className="App">
-      <div id="resumePage">
-        <ResumeBuild />
-      </div>
-      <button className="ml-96 noPrint border bg-cyan-800 text-white px-8 py-1 rounded-lg uppercase" id="printButton" onClick={PrintResume}>
-        Print Resume
+      <button className="ml-96 noPrint mt-8 border bg-cyan-800 text-white px-8 py-1 rounded-lg uppercase" id="printButton" onClick={PrintBoth}>
+        Print Both
       </button>
       <div id="coverPage">
         <CoverPageBuild />
       </div>
-
       <button className="ml-96 noPrint mb-12 border bg-cyan-800 text-white px-8 py-1 rounded-lg uppercase" id="printButton" onClick={PrintCover}>
         Print Cover
+      </button>
+      <div id="resumePage">
+        <ResumeBuild />
+      </div>
+      <button className="ml-96 mb-8 noPrint border bg-cyan-800 text-white px-8 py-1 rounded-lg uppercase" id="printButton" onClick={PrintResume}>
+        Print Resume
       </button>
     </div>
   );
