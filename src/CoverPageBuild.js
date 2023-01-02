@@ -94,11 +94,11 @@ export default function CoverPageBuild() {
             This is regarding {company} open position for {job}. I am a highly focused, motivated and a skilled {job} with an ability to problem solve quickly and efficiently. I hold two Bachelors Degrees. A Computer Science Degree where I focused on Data Structures, and optimization from Dakota
             State University. As well as Business Degree tailored to Financial and Team Management from the University of Charleston.
           </div>
-          <br />
+          <br /> <br />
           <div className="indent-8 text-base">I understand the importance of building and managing Data Structures, and feel that with my knowledge and motivation I can quickly become a valued member of the {company} team. </div>
-          <br />
+          <br /> <br />
           <div className="indent-64 text-base">Thank you for your time and consideration</div>
-          <div className="indent-64 text-base">
+          <div className="pl-64 text-base">
             <img src={Sign} className="w-64" alt="Signature" />
             Travis Heidelberger
           </div>
